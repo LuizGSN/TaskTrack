@@ -1,5 +1,5 @@
 {
-  "name": "to-do-list-teste-tecnico",
+  "name": "tasktrack",
   "version": "1.0.0",
   "private": true,
   "description": "Mini API de tarefas com Node.js, Express, PostgreSQL e React.",

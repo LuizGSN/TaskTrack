@@ -186,7 +186,7 @@ function App() {
       <section className="workspace">
         <header className="page-header">
           <div>
-            <span className="eyebrow">TO-DO LIST (TESTE-TECNICO)</span>
+            <span className="eyebrow">TaskTrack</span>
             <h1>Gerenciador de tarefas</h1>
             <p className="header-copy">
               Uma lista objetiva, com modo escuro, foco visual e destaque só para o que realmente

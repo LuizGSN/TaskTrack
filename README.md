@@ -1,6 +1,6 @@
-# TO-DO LIST (TESTE-TECNICO)
+# TaskTrack
 
-> Aplicação fullstack de gerenciamento de tarefas com API REST, CRUD completo e interface web simples para consumo da API.
+> Aplicação fullstack de gerenciamento de tarefas com API REST, filtros, prioridades e interface React com dark mode.
 
 ![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react)
 ![Node.js](https://img.shields.io/badge/Node.js-Express-339933?style=for-the-badge&logo=node.js)
@@ -51,8 +51,8 @@ Fluxo principal:
 ### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/LuizGSN/TO-DO-LIST-TESTE-TECNICO.git
-cd TO-DO-LIST-TESTE-TECNICO
+git clone https://github.com/LuizGSN/TaskTrack.git
+cd TaskTrack
 ```
 
 Se você já está com a pasta do projeto aberta, apenas siga para o próximo passo.
