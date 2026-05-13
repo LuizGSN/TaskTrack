@@ -12,8 +12,22 @@ import { parseId, validateTaskFilters, validateTaskPayload } from './validation.
 
 const app = express();
 const port = process.env.PORT ?? 3333;
+const allowedOrigins = process.env.ALLOWED_ORIGINS
+  ?.split(',')
+  .map((origin) => origin.trim())
+  .filter(Boolean);
 
-app.use(cors());
+app.use(cors({
+  origin: allowedOrigins?.length
+    ? (origin, callback) => {
+      if (!origin || allowedOrigins.includes(origin)) {
+        return callback(null, true);
+      }
+
+      return callback(new Error('Origem não permitida pelo CORS.'));
+    }
+    : true
+}));
 app.use(express.json());
 
 app.get('/health', (request, response) => {
